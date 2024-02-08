@@ -1,0 +1,21 @@
+class RecordTest{
+
+type
+    MyStruct = struct{
+        integer id;
+    };
+
+var
+    integer i;
+    MyStruct obj;
+
+
+procedure main(){
+    {
+        i = 4;
+        obj.id = i;
+        printf('obj.id = %d\n', obj.id);
+    }
+}
+
+}

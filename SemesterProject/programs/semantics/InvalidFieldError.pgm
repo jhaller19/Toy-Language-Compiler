@@ -1,0 +1,16 @@
+class InvalidField {
+
+    type
+        MyStruct = struct{
+            integer id;
+        };
+
+    var
+        integer a;
+        myStruct obj;
+
+    procedure main(){
+        a = obj.item;
+    }
+
+}

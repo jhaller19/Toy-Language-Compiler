@@ -1,0 +1,11 @@
+class TooManySubscripts {
+
+    var
+        integer i;
+        string s;
+
+    procedure main() {
+        s = s[1];
+    }
+
+}

@@ -1,0 +1,18 @@
+class FunctionTest{
+
+var
+integer i;
+
+function integer add(integer a, integer b) {
+        {
+            add = a + b;
+        }
+};
+
+procedure main(){
+    {
+        i = 1;
+        i = add(i, 2);
+    }
+}
+}

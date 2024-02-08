@@ -1,0 +1,12 @@
+class InvalidVariable {
+
+    const
+        word = 'hangman';
+    var
+        integer i;
+
+    procedure main(){
+        i = InvalidVariable;
+    }
+
+}

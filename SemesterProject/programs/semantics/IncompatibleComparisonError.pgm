@@ -1,0 +1,14 @@
+class IncompatibleComparison {
+
+    var
+        string i;
+        integer x;
+        boolean k;
+
+    procedure main() {
+        i = 'string';
+        x = 1;
+        k = (i == x);
+    }
+
+}

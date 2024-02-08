@@ -1,0 +1,11 @@
+class TypeMustBeNumeric {
+
+    var
+        integer i;
+        string s;
+
+    procedure main() {
+        s = 'l' + i;
+    }
+
+}

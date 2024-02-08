@@ -1,0 +1,8 @@
+class RedeclaredIdentifier{
+
+    var
+        integer i;
+        integer i;
+    procedure main(){
+    }
+}

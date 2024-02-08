@@ -1,0 +1,12 @@
+class CLInputTest{
+
+VAR
+    string input;
+
+procedure main(){
+    {
+        input = getArg(0);
+        printf('%s\n', input);
+    }
+}
+}

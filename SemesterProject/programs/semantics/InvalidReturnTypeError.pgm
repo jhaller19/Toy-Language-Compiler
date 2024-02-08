@@ -1,0 +1,7 @@
+class InvalidReturnType {
+
+    procedure main(){{
+        printf('%s', 'Invalid function return type error is not represented in our program because it will always hit an incompatible assignment first');
+    }}
+
+}

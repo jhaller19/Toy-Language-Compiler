@@ -1,0 +1,14 @@
+class ArgumentCountMismatch {
+
+    var
+        string a;
+        string b;
+        integer c;
+
+    procedure main() {
+        c = 4;
+        b = 'string';
+        writeln(c + b);
+    }
+
+}

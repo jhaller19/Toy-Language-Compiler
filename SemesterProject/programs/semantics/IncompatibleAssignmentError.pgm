@@ -1,0 +1,10 @@
+class IncompatibleAssignment {
+
+    var
+        real i;
+
+    procedure main() {
+        i = 'string'
+    }
+
+}

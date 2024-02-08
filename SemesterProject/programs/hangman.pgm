@@ -1,0 +1,138 @@
+class Hangman{
+   const
+        word = 'compile';
+   type
+        MyArray = array char[7];
+        AlreadyGuessed = array char[500];
+   var
+        integer i;
+        integer ncorrectguesses;
+        integer correct;
+        integer strikes;
+        char guess;
+        boolean iscorrect; /*boolean*/
+        MyArray wordarr;
+        MyArray guessingarr;
+        real totalguesses;
+        integer totalguessesint;
+        AlreadyGuessed alreadyguessedarr;
+        integer index;
+        boolean repeat;
+
+
+
+    /*procedure init() {
+        {
+            i = m;
+        }
+    };*/
+
+
+
+    /*Main method*/
+    procedure main(){
+        {
+            totalguesses = 0.0;
+            totalguessesint = 0;
+            i = 0;
+            while(i < 7){
+                {
+                    guessingarr[i] = '_';
+                    i = i + 1;
+                }
+            };
+            wordarr[0] = 'c';
+            wordarr[1] = 'o';
+            wordarr[2] = 'm';
+            wordarr[3] = 'p';
+            wordarr[4] = 'i';
+            wordarr[5] = 'l';
+            wordarr[6] = 'e';
+
+            printf('Welcome. Try and guess my secret word: ');
+            i = 0;
+            while(i < 7){
+                {
+                    printf('%s', guessingarr[i]);
+                    i = i + 1;
+                }
+            };
+            printf('\n');
+
+            while((strikes < 3) and (correct < 7)){
+                {
+                    repeat = false;
+                    totalguesses = totalguesses + 1.0;
+                    totalguessesint = totalguessesint + 1;
+                    guess = ' ';
+                    iscorrect = false; /*false*/
+                    ncorrectguesses = 0;
+                    printf('Select a letter: ');
+                    read(guess);
+                    i = 0;
+                    while(i < 100){
+                        {
+                            if(alreadyguessedarr[i] == guess){
+                                {
+                                    printf('%c was already guessed\n' , guess);
+                                    repeat = true;
+                                }
+                            };
+                            i = i + 1;
+                        }
+                    };
+                    alreadyguessedarr[index] = guess;
+                    index = index + 1;
+                    i = 0;
+                    if(repeat == false){
+                        {
+                        while(i < 7){
+                            {
+                                if(guess == wordarr[i]){
+                                    {
+                                        guessingarr[i] = guess;
+                                        correct = correct + 1;
+                                        iscorrect = true;
+                                        ncorrectguesses = ncorrectguesses + 1;
+                                    }
+                                };
+                                i = i + 1;
+                            }
+                        };
+
+
+                        if(iscorrect == false){ /*false*/
+                            {
+                                strikes = strikes + 1;
+                                printf('The letter %c does not appear. You have %d strike(s): ', guess, strikes);
+                            }
+                        }else{
+                            printf('The letter %c appears %d times: ', guess ,ncorrectguesses)
+                        };
+                        i = 0;
+                        while(i < 7){
+                            {
+                                printf('%s', guessingarr[i]);
+                                i = i + 1;
+                            }
+                        };
+                        if(correct == 7){
+                           {
+                           printf('\nYour guess percentage was: %.2f%s', (correct/totalguesses)*100.0, '%');
+                           printf('\nYou won with %d guesses. Goodbye!\n', totalguessesint + strikes);
+                           }
+                        };
+                        if(strikes == 3){
+                           {
+                           printf('\nYour guess percentage was: %.2f%s', (correct/totalguesses)*100.0, '%');
+                           printf('\nYou lose. Goodbye!\n');
+                           }
+                        };
+                        printf('\n');
+                        }
+                    }
+                }
+            };
+        }
+    }
+}

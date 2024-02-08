@@ -1,0 +1,14 @@
+class TypeMustBeInteger {
+
+    var
+        integer i;
+        real j;
+        real k;
+
+    procedure main() {
+        j = 3.2;
+        k = 3.4;
+        i = j div k;
+    }
+
+}

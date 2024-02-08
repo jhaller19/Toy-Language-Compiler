@@ -1,0 +1,12 @@
+class TypeMustBeBoolean {
+
+    var
+        boolean a;
+        boolean b;
+        string c;
+
+    procedure main() {
+        a = b OR c;
+    }
+
+}

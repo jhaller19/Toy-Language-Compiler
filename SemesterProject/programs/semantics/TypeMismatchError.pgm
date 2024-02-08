@@ -1,0 +1,16 @@
+class TypeMismatch {
+
+    var
+        integer i;
+        string m;
+
+    procedure s(integer q) {
+        {i = q;}
+    };
+
+    procedure main(){{
+        m = 'hi';
+        s(m);
+    }}
+
+}

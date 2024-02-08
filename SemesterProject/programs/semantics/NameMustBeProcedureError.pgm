@@ -1,0 +1,16 @@
+class NameMustBeProcedure {
+
+    type
+        MyStruct = struct{
+            integer id;
+        };
+
+    var
+        integer a;
+        myStruct obj;
+
+    procedure main(){
+        obj();
+    }
+
+}

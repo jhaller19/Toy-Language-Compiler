@@ -1,0 +1,7 @@
+class InvalidType {
+
+    var
+        int i;
+
+    procedure main() {}
+}

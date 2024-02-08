@@ -1,0 +1,12 @@
+class InvalidOperator {
+
+    var
+        string i;
+        string j;
+        string l;
+
+    procedure main() {
+        l = j - i;
+    }
+
+}

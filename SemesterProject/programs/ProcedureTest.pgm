@@ -1,0 +1,22 @@
+class ProcedureTest{
+
+var
+integer i;
+
+
+
+procedure alpha(integer m) {
+        {
+            i = m;
+        }
+};
+
+
+procedure main(){
+    {
+        i = 1;
+        alpha(2);
+    }
+}
+
+}

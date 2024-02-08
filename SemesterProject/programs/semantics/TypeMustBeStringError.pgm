@@ -1,0 +1,16 @@
+class TypeMustBeString {
+
+    var
+        integer i;
+        string m;
+
+    procedure s(string q) {
+        {m = q;}
+    };
+
+    procedure main(){{
+        i = 4;
+        s(i);
+    }}
+
+}
